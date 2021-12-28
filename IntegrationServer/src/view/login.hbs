@@ -1,0 +1,30 @@
+
+ <div class="col-md-4 mx-auto mt-4">
+    <div class="card-block login-form">
+        <div class="card-header display-6 text-light">
+            <i class="fa fa-user-circle" aria-hidden="true"></i> Ingresar
+        </div>
+        <div class="card-body ">
+             <form action="/login" method="POST" >
+             <div class="mb-3"> 
+                <input type="text" id="login" class="form-control" name="login" placeholder="Usuario">
+             </div>
+             <div class="mb-3"> 
+                <input type="password" id="password" name="password" class="form-control" placeholder="Contraseña">
+             </div>
+             <div class="d-grid gap-2">
+                <button class="btn btn-primary" type="submit">Ingresar</button>
+            </div>
+   
+             </form>
+        </div>
+    </div>
+</div>
+
+{{#each errors }}
+<div class="alert alert-danger alert-dismissible fade show" role="alert">
+  {{text}}
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+
+{{/each}}

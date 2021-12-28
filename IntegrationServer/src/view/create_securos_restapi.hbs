@@ -1,0 +1,27 @@
+ <div class="col-md-4 mx-auto mt-4">
+    <div class="card-block login-form">
+        <div class="card-header display-6 text-light">
+            Conectar a SecurOS RestAPI
+        </div>
+        <div class="card-body ">
+             <form action="/resources/securosapi/" method="POST" >
+             <div class="mb-3"> 
+                <input type="text" id="name" class="form-control" name="name" placeholder="Nombre" value="{{name}}">
+             </div>
+             <div class="mb-3"> 
+                <input type="text" id="url" name="url" class="form-control"placeholder="Url" value="{{url}}">
+             </div>
+             <div class="mb-3"> 
+                <input type="text" id="login" class="form-control" name="login" placeholder="Usuario" value="{{login}}">
+             </div>
+             <div class="mb-3"> 
+                <input type="password" id="password" class="form-control" name="password" placeholder="Contraseña" value="{{password}}">
+             </div>
+             <div class="d-grid gap-2">
+                <button class="btn btn-primary" type="submit">Crear</button>
+            </div>
+   
+             </form>
+        </div>
+    </div>
+</div>

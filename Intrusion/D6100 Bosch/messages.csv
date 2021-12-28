@@ -1,0 +1,26 @@
+Message,Alert,Type
+100,Medical Alarm,ALARM
+110,Fire Alarm,ALARM
+111,Fire Alarm:Smoke,ALARM
+112,Fire Alarm:Combustion,ALARM
+113,Fire Alarm:Water Flow,ALARM
+114,Fire Alarm:Heat,ALARM
+115,Fire Alarm:Pull Station,ALARM
+116,Fire Alarm:Duct,ALARM
+117,Fire Alarm:Flame,ALARM
+118,Fire Alarm:Near Alarm,ALARM
+121,Panic Alarm:Duress,ALARM
+122,Panic Alarm:Silent,ALARM
+123,Panic Alarm:Audible,ALARM
+130,Burglar Alarm,ALARM
+131,Burglar Alarm:Perimeter,ALARM
+132,Burglar Alarm:Interior,ALARM
+134,Burglar Alarm:Entry/Exit,ALARM
+373,Fire Trouble,ALARM
+333,Expansion Module Failure,ALARM
+380,Sensor Trouble,ALARM
+382,Sensor Trouble:Loss of supervisory - RPM,ALARM
+401,Open by user,EVENT
+406,Open/close Cancel,EVENT
+570,Zone Bypass,EVENT
+55555555,Test Event,EVENT

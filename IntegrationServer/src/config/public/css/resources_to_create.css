@@ -1,0 +1,35 @@
+:root{
+	--primary:#111b54;
+	--light:#fff;
+	--grey: #efefef;
+    --securosbar : linear-gradient(180deg, #3E4B6F, #293450);;
+    --securosbg:  #1F2840;
+    --securoshd:  #333C5C;
+	--green:  #4cf22a;
+	--red: linear-gradient(180deg, #3E4B6F, #293450);;
+}
+
+.resource-container{
+	background-color: #293b65;
+	color:#eee9e9;
+    padding: 10px 15px;
+    text-align: center;
+    max-height: 130px;
+    min-width: 200px;
+    max-width: 200px;
+    cursor: pointer;
+    
+}
+
+.resource-container:hover{
+    transform: scale(0.96);
+}
+
+.card-header{
+    border-bottom: 1px solid #f8f9fa;
+}
+
+
+.resource-icon{
+    font-size: 40px;
+}

@@ -1,0 +1,31 @@
+<service>
+	<id>securosintegrationserver.exe</id>
+	<name>SecurOS Integration Server</name>
+	<description>SecurOS Integration Server, </description>
+	<executable>C:\Program Files (x86)\ISS\integretionServer\integretionServer\IntegrationServer\src\node.exe</executable>
+	<argument>--harmony</argument>
+	<argument>C:\Program Files (x86)\ISS\integretionServer\integretionServer\IntegrationServer\node_modules\node-windows\lib\wrapper.js</argument>
+	<argument>--file</argument>
+	<argument>C:\Program Files (x86)\ISS\integretionServer\integretionServer\IntegrationServer\src\index.js</argument>
+	<argument>--scriptoptions=</argument>
+	<argument>--log</argument>
+	<argument>SecurOS Integration Server wrapper</argument>
+	<argument>--grow</argument>
+	<argument>0.25</argument>
+	<argument>--wait</argument>
+	<argument>1</argument>
+	<argument>--maxrestarts</argument>
+	<argument>3</argument>
+	<argument>--abortonerror</argument>
+	<argument>n</argument>
+	<argument>--stopparentfirst</argument>
+	<argument>undefined</argument>
+	<logmode>rotate</logmode>
+	<stoptimeout>30sec</stoptimeout>
+	<serviceaccount>
+		<domain>HT7CZC3</domain>
+		<user>LocalSystem</user>
+		<password></password>
+	</serviceaccount>
+	<workingdirectory>C:\Program Files (x86)\ISS\integretionServer\integretionServer\IntegrationServer\src</workingdirectory>
+</service>

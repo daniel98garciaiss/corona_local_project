@@ -1,0 +1,15 @@
+Instalación de MongoDB en MS Windows
+Obtener el instalador para Windows del centro de descargas.
+Iniciar el instalador como administrador.
+Crear las carpeta de almacenamiento y configuracion de MongoDB.
+Dar permisos escritura y lectura a estas carpetas.
+ C:\data 
+ C:\data\db
+(Opcional) Crear las carpeta de almacenamiento en una ruta segura ejemplo:
+D:\mongodb\data\db
+Iniciar el servidor del servicio de MongoDB: mongod.
+C:\mongodb\bin\mongod.exe
+(Opcional) Si se usa una ruta personalizada se debe pasar un parámetro con la ruta al iniciar el servidor de mongo.
+C:\mongodb\bin\mongod.exe --dbpath D:\mongodb\data\db
+Iniciar el shell de mongo.
+C:\mongodb\bin\mongo.exe

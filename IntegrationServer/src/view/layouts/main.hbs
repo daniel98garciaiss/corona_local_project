@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/js/main.js"></script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- SecurOS CSS -->
+    <link href="/css/securos.css" rel="stylesheet">
+    <link href="/css/advanceConfig.css" rel="stylesheet">
+    <link href="/css/resources_to_create.css" rel="stylesheet">
+    <link href="/css/all.css" rel="stylesheet">
+    <!-- icon page -->
+    <link rel="SecurOS Integration Server" href="../../public/img/securos.png">
+    <!-- fontawesome CSS -->
+    <script src="/js/1b695b51a8.js" crossorigin="anonymous"></script>
+
+    
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery-3.2.1.slim.min.js"></script>
+    <script src="/js/popper.min.js" ></script>
+    <script src="/js/bootstrap.min.js" ></script>
+    <title>SecurOS Integration Server</title>
+  </head>
+
+  <body>
+ 	{{> navigation}}
+  {{> toolbar}}
+
+  <div class="d-flex">
+    <div class="container mt-5 pt-5 ">
+		 
+       
+		  	{{> messages }}
+        {{{ body }}}
+         {{> errors }}
+            {{> error_msg }}
+    </div>
+  </div>
+ 
+	</body>
+</html>

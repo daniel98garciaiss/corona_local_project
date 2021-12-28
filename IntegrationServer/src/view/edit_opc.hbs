@@ -1,0 +1,23 @@
+<div class="col-md-4 mx-auto">
+    <div class="card-block login-form">
+        <div class="card-header display-6 text-light">
+            <h3>Editar Recurso</h3>
+        </div>
+        {{#if opc}}
+        <div class="card-body">
+            <form action="/resources/opc/{{opc._id}}?_method=PUT" method="POST">
+                <input type="hidden" name="_method" value="PUT">
+                <div class="mb-3"> 
+                    <input type="text" id="name" class="form-control disable" name="name" placeholder="Nombre" value="{{opc.name}}">
+                </div>
+                <div class="mb-3"> 
+                    <input type="text" id="url" class="form-control" name="url" placeholder="Url" value="{{opc.url}}">
+                 </div>
+                <div class="d-grid gap-2">
+                 <button class="btn btn-primary" type="submit">Guardar</button>
+                </div>
+            </form>
+        </div>
+        {{/if}}
+    </div>
+</div>

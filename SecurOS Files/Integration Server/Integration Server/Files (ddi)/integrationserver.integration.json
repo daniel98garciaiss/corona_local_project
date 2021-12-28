@@ -1,0 +1,96 @@
+{
+        "version": 1,
+        "reset_timeout": 60,
+        "structure":
+        [{
+
+                "parent": "INTEGRATION",
+                "type":   "EXTERNAL_SYSTEMS",
+                "children": 
+                        [{ 
+                                "type":   "OPC_SERVER",
+                                "children": 
+                                        [{   
+                                                "type": "GENERIC_DOOR"
+                                        },
+                                        {
+                                                "type": "GENERIC_INPUT"
+                                        },
+                                        {
+                                                "type": "GENERIC_OUTPUT"
+                                        },
+                                        {
+                                                "type": "GENERIC_RELAY"
+                                        },
+                                        {
+                                                "type": "GENERIC_LIGHT"
+                                        },
+                                        {
+                                                "type": "GENERIC_SENSOR"
+                                        },
+                                        {
+                                               "type": "GENERIC_SMOKE"
+                                        },
+                                        {
+                                                "type": "GENERIC_FIRE"
+                                        },
+                                        {
+                                                "type": "GENERIC_INTRU"
+                                        },
+                                        {
+                                                "type": "GENERIC_AREA"
+                                        }
+                                        ]},
+                        {
+                                "type":   "MODBUS_MODULE",
+                                "children": 
+                                        [{   
+                                                "type": "GENERIC_DOOR_MO"
+                                        },
+                                        {
+                                                "type": "GENERIC_INPUT_MO"
+                                        },
+                                        {
+                                                "type": "GENERIC_OUT_MO"
+                                        },
+                                        {
+                                                "type": "GENERIC_RELAY_MO"
+                                        },
+                                        {
+                                                "type": "GENERIC_LIGHT_MO"
+                                        },
+                                        {
+                                                "type": "GENERIC_SEN_MO"
+                                        },
+                                        {
+                                                "type": "GENERIC_SMOKE_MO"
+                                        },
+                                        {
+                                                "type": "GENERIC_FIRE_MO"
+                                        },
+                                        {
+                                                "type": "GENERIC_INTRU_MO"
+                                        },
+                                        {
+                                                "type": "GENERIC_AREA_MO"
+                                        }
+                                        ]},
+                        { 
+                                "type":   "RECEIVER",
+                                "children": 
+                                        [{   
+                                                "type": "PANEL",
+                                                "children": 
+                                                [{
+                                                        "type": "PARTITION",
+                                                        "children": 
+                                                        [{
+                                                                "type": "SENSOR"
+                                                        }]
+
+                                                }]
+                                        }]
+
+                        }]
+        }]
+}

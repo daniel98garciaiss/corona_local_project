@@ -1,0 +1,133 @@
+<div class="col-6 mx-auto">
+    <div class="card-block login-form">
+        <div class="row card-header display-6 text-light">
+            <h3 class="col-9">Editar Relay</h3>
+            <small class="col text-center"> ID {{Relay.typeID}}</small>
+        </div>
+
+            {{!-- ------------------------------------- --}}
+            <form class="row mt-4 justify-content-center" action="/relay/edit/{{Relay._id}}?_method=PUT" method="POST">
+                <div class="row">
+                    <input type="hidden" name="_method" value="PUT">
+
+                    <div class=" col">
+                        <label class="text-light mb-1">Nombre</label>
+                        <input required type="text" id="login" class="form-control disable" name="name"
+                            placeholder="Nombre" value="{{Relay.name}}">
+                    </div>
+
+                    {{!-- <div class="col">
+                        <label class="text-light mb-1">ID</label>
+                        <input required type="text" id="login" class="form-control disable" name="typeID"
+                            placeholder="ID" value={{Relay.typeID}}>
+                    </div> --}}
+                    
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-md-6 mb-2">
+                        <h5 class="card-header text-light mb-2">On</h5>
+
+                        <label class="text-light mb-1">Servidor</label>
+                        <select required class="opc-server-select-on form-select mb-1 "
+                            aria-label="Default select example" name="server_on">
+                            <option selected> Seleccione un servidor</option>
+                            {{#each Opc}}
+                            <option class="opc-server" id="{{@index}}" value={{this._id}}>{{this.name}}</option>
+                            {{/each}}
+                        </select>
+
+                        <label class="text-light mb-1">Llave</label>
+                        <select required class="methods-select-on form-select mb-1 col"
+                            aria-label="Default select example" name="key_on">
+                            <option selected> Seleccione una llave</option>
+
+                        </select>
+
+                        <label class="text-light mb-1">Valor</label>
+                        <div class="">
+                            <input required type="text" class="form-control"
+                                placeholder="Escriba un valor para la llave" name="value_on" />
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <h5 class="card-header text-light mb-2">Off</h5>
+
+                        <label class="text-light mb-1">Servidor</label>
+                        <select required class="opc-server-select-off form-select mb-1"
+                            aria-label="Default select example" name="server_off">
+                            <option selected> Seleccione un servidor</option>
+                            {{#each Opc}}
+                            <option class="opc-server" id="{{@index}}" value={{this._id}}>{{this.name}}</option>
+                            {{/each}}
+                        </select>
+
+                        <label class="text-light mb-1">Llave</label>
+                        <select required class="methods-select-off form-select mb-1 col"
+                            aria-label="Default select example" name="key_off">
+                            <option selected> Seleccione una llave</option>
+
+                        </select>
+
+                        <label class="text-light mb-1">Valor</label>
+                        <div class="mb-5">
+                            <input required type="text" class="form-control"
+                                placeholder="Escriba un valor para la llave" name="value_off" />
+                        </div>
+                    </div>
+                </div>
+                <div class="d-grid gap-2 mb-4">
+                    <button class="btn btn-primary" type="submit">Guardar</button>
+                </div>
+            </form>
+
+    </div>
+</div>
+
+
+<script type="text/javascript">
+    let Opc = `{{{convert Opc}}}`
+    Opc = JSON.parse(Opc);
+
+    let opc_select_on = document.querySelector(".opc-server-select-on");
+
+    ////////////////////////// ON //////////////////////
+    opc_select_on.addEventListener('change', (event) => {
+        let indexSelected_on = opc_select_on.options[opc_select_on.selectedIndex].id;                         // value of the selected element
+
+        if (Opc[indexSelected_on].methods != null) {
+            addOptions(".methods-select-on", Opc[indexSelected_on].methods[0]);
+        } else {
+            //if array is null or empty 
+            document.querySelector(".methods-select-on").innerHTML = "<option> Seleccione una llave </option>";
+        }
+    });
+
+
+    ////////////////////////// OFF //////////////////////
+    let opc_select_off = document.querySelector(".opc-server-select-off");
+
+    opc_select_off.addEventListener('change', (event) => {
+        let indexSelected_off = opc_select_off.options[opc_select_off.selectedIndex].id;                         // value of the selected element
+
+        if (Opc[indexSelected_off].methods != null) {
+            addOptions(".methods-select-off", Opc[indexSelected_off].methods[0]);
+        } else {
+            //if array is null or empty 
+            document.querySelector(".methods-select-off").innerHTML = "<option> Seleccione una llave </option>";
+        }
+    });
+
+    // Rutina para agregar opciones a un <select>
+    function addOptions(domElement, array) {
+        //just keys
+        let keys = Object.keys(array)
+
+        if (keys.length > 0) {
+            for (let i in keys) {
+                document.querySelector(domElement).innerHTML += "<option value='" + keys[i] + "'>" + keys[i] + "</option>";
+            }
+        }
+    }
+</script>

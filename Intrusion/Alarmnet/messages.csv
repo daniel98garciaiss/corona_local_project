@@ -1,0 +1,38 @@
+Message,Alert,Type
+E100,Medical Alarm,ALARM
+R100,Medical Alarm Restored,INFO
+E110,Fire Alarm,ALARM
+R110,Fire Alarm Restored,INFO
+E111,Fire Alarm:Smoke,ALARM
+R111,Fire Alarm:Smoke Restored,INFO
+E112,Fire Alarm:Combustion,ALARM
+R112,Fire Alarm:Combustion Restored,INFO
+E113,Fire Alarm:Water Flow,ALARM
+R113,Fire Alarm:Water Flow Restored,INFO
+E114,Fire Alarm:Heat,ALARM
+R114,Fire Alarm:Heat Restored,INFO
+E115,Fire Alarm:Pull Station,ALARM
+R115,Fire Alarm:Pull Station Restored,INFO
+E116,Fire Alarm:Duct,ALARM
+R116,Fire Alarm:Duct Restored,INFO
+E117,Fire Alarm:Flame,ALARM
+R117,Fire Alarm:Flame Restored,INFO
+E118,Fire Alarm:Near Alarm,ALARM
+R118,Fire Alarm:Near Alarm Restored,INFO
+E121,Panic Alarm:Duress,ALARM
+R121,Panic Alarm:Duress Restored,INFO
+E122,Panic Alarm:Silent,ALARM
+R122,Panic Alarm:Silent Restored,INFO
+E123,Panic Alarm:Audible,ALARM
+R123,Panic Alarm:Audible Restored,INFO
+E131,Burglar Alarm:Perimeter,ALARM
+R131,Burglar Alarm:Perimeter Restored,INFO
+E132,Burglar Alarm:Interior,ALARM
+R132,Burglar Alarm:Interior Restored,INFO
+E339,Module Reset,ALARM
+R359,Comm Fail,ALARM
+E401,Open by user,INFO
+R401,Close by user,INFO
+55555555,Test Event,EVENT
+55555515,Supervisory/Trouble Master Host Alarm,ALARM
+55555535,Supervisory/Trouble Master Host Alarm Restored,INFO

@@ -1,0 +1,61 @@
+<div class="mb-1 bg-light rounded-3 bg-securosbar text-light">
+      <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold d-flex justify-content-between align-items-center">Relays 
+            {{!-- {{#ifCond user.rol "==" "admin"}} --}}
+            <a alt="Edit" class="link-light" href="/relays/create"><i class="fa fa-plus-circle mx-5 green" aria-hidden="true"></i></a>
+            {{!-- {{/ifCond}} --}}
+         </h1>
+      </div>
+    </div>
+
+<div class="row  mb-4  rounded-3 " >
+    {{#each Relays}}
+        <div class="col-md-6 mt-2">
+            <div class="card shadow rounded">
+                <div class="card-body">
+                    <h4 class="card-title d-flex justify-content-between align-items-center">
+                        <i class="fa fa-cogs" aria-hidden="true"></i> 
+                        <a alt="Edit" class="link-light" href="">Relay - {{name}} (ID-{{typeID}})  </a> 
+                        <a alt="Edit" class="link-light" href="/relays/edit/{{_id}}"><i class="fas fa-edit"></i></a>
+                    </h4>
+                    <p>{{type}} </p>
+                     <div class="row mb-2">
+                         <div class="col">
+                            <label class="text-light mb-1" >On</label>
+                            <div> servidor: <strong>{{actions.0.ON.server}}</strong></div>
+                            <div> llave: <strong>{{actions.0.ON.key}}</strong></div>
+                            <div> valor: <strong>{{actions.0.ON.value}}</strong></div>
+                         </div>
+                         <div class="col">
+                            <label class="text-light mb-1" >Off</label>
+                            <div> servidor: <strong>{{actions.0.OFF.server}}</strong></div>
+                            <div> llave: <strong>{{actions.0.OFF.key}}</strong></div>
+                            <div> valor: <strong>{{actions.0.OFF.value}}</strong></div>
+                         </div>
+                     </div>
+                    <h4 class="card-title d-flex justify-content-between align-items-center">
+                    {{!-- {{#ifCond ../user.rol "==" "admin"}} --}}
+
+                    <form action="/relays/delete/{{_id}}?_method=DELETE" method="POST">
+                        <input type="hidden" name="_method" value="DELETE">
+                        <button class="btn btn-danger btn-sm" type="submit"><i class="fas fa-trash-alt"></i> 
+                    </form> 
+                    {{!-- {{/ifCond}} --}}
+
+                    {{!-- </button> <i class="fas fa-circle  {{state}} "></i> --}}
+                    </h4>
+                </div>
+            </div>
+        </div>
+         {{else}} 
+        <div class="col-md-3 mx-auto">
+            <div class="card mx-auto">
+                <div class="card-body">
+                    <p class="lead">No existe ningun Relay.</p>
+                    <a href="/relays/create" class="btn btn-success btn-block">Crear Relay!</a>
+                </div>
+            </div>   
+        </div>
+    {{/each}}
+   
+</div>

@@ -1,0 +1,58 @@
+<div class="row mx-auto justify-content-center">
+    <div class="col-12 wrapper">
+        <div class="card-header display-6 text-light d-flex justify-content-center">
+            <h3>¿Que recurso quiere crear?</h3>
+        </div>
+
+        <div class="row w-100 m-auto mt-3 d-flex">
+                <div class="col-md col-sm-6 col-12 p-0 m-md-3 m-sm-0 d-flex flex-column align-items-lg-end align-items-center">
+                    <div id="opc" class=" col resource-container d-flex flex-column align-items-center text-light rounded m-2">
+                        <i class=" icon fa fa-server resource-icon m-4 "></i>
+                        <h6 class="h-text mb-3">Servidor OPC</h6>
+                    </div>
+                    <div id="bosh" id="bosh" class=" col resource-container d-flex flex-column align-items-center text-light rounded m-2">
+                        <i class=" icon fas fa-broadcast-tower resource-icon m-4 "></i>
+                        <h6 class="h-text mb-3">Receptora Bosch</h6>
+                    </div>
+                </div>
+                {{!-- ---------columna 2----------------------- --}}
+                <div  class="col-md-2 col-sm-6 col-12 p-0 m-md-3 m-sm-0 d-flex flex-column align-items-center">
+                    <div id="systemv" class=" col resource-container d-flex flex-column align-items-center text-light rounded m-2">
+                        <i class=" icon fas fa-broadcast-tower resource-icon m-4 "></i>
+                        <h6 class="h-text mb-3">Receptora SystemV</h6>
+                    </div>
+                    <div id="alarmnet" class=" col resource-container d-flex flex-column align-items-center text-light rounded m-2">
+                        <i class=" icon fas fa-broadcast-tower resource-icon m-4 "></i>
+                        <h6 class="h-text mb-3">Receptora AlarmNet</h6>
+                    </div>
+                </div>
+                {{!-- ------------columna 3-------------------- --}}
+
+                <div id="servidorSecuros" class="col-md col-sm-6 col-12 p-0 m-md-3 m-sm-0 d-flex flex-column align-items-lg-start align-items-center">
+                    <div id="securos" class=" col resource-container d-flex flex-column align-items-center text-light rounded m-2">
+                        <i class=" icon fa fa-server resource-icon m-4 "></i>
+                        <h6 class="h-text mb-3">Servidor Securos</h6>
+                    </div>
+                    {{!-- <div class=" col resource-container d-flex flex-column align-items-center text-light rounded m-2">
+                        <i class=" icon fas fa-broadcast-tower resource-icon m-4 "></i>
+                        <h6 class="h-text mb-3">Receptora Bosh</h6>
+                    </div> --}}
+                </div>
+                    
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    let resource = document.querySelectorAll(".resource-container");
+
+    for (let i = 0; i < resource.length; i++) {
+     resource[i].addEventListener("click", function(){
+        returnUrl = window.location.protocol + "//" + window.location.host + "/resources/" + this.id;
+        window.location.href = returnUrl;
+    });
+
+ }
+
+    
+</script>

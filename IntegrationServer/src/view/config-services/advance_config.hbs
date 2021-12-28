@@ -1,0 +1,43 @@
+<div class="row mx-auto justify-content-center">
+    <div class="col-12 wrapper">
+        <div class="card-header display-6 text-light">
+            <h3>Configuración avanzada</h3>
+        </div>
+
+        <div class="row m-0 mt-3 justify-content-left wrapper-boxes">
+              
+        {{#each services}}
+            <div class="col-lg-4 col-md-5 col-sm-7 col-8 service-card shadow rounded m-1  d-flex flex-column  justify-content-center align-items-center">
+
+                    <h4 class="card-header service-card-title w-100 mb-3">
+                        <div class="d-flex justify-content-between align-items-center" >
+                            <i></i> 
+                            <a alt="Edit" class="tittle-name link-light" >Servicio {{name}} </a>
+                            <small>
+                                <i class="fa fa-server" aria-hidden="true"></i> 
+                            </small>
+                        </div>
+                    </h4>
+
+                        <div class="row w-100 d-flex justify-content-between align-items-center">
+                            <div class="col-9">
+                                <div class="row">
+                                    <h6 class="col-4">IP</h6>
+                                    <label class="col" for="edit">{{ip}}</label>
+                                </div>
+                                <div class="row">
+                                    <h6 class="col-4">Puerto</h6>
+                                    <label  class="col" for="edit">{{port}}</label>
+                                </div>
+                            </div>
+
+                            <a class="col link-light d-flex justify-content-end align-items-center" alt="Edit" id="edit"  href="/advance-config/service/{{_id}}">
+                                <h4 class=""><i class="text-right fas fa-edit"></i></h4>
+                            </a>
+                        </div>
+            </div>
+        {{/each}}
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,20 @@
+{
+  "name": "system5",
+  "version": "1.0.0",
+  "description": "System 5 Integration Module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "System5"
+  ],
+  "author": "SR",
+  "license": "ISC",
+  "dependencies": {
+    "csv-parser": "^3.0.0",
+    "csvtojson": "^2.0.10",
+    "fast-csv": "^4.3.6",
+    "request": "^2.88.2"
+  }
+}

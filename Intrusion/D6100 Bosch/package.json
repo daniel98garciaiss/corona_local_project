@@ -1,0 +1,20 @@
+{
+  "name": "d6100-bosch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "D6100",
+    "Integration",
+    "Module"
+  ],
+  "author": "SR",
+  "license": "ISC",
+  "dependencies": {
+    "csvtojson": "^2.0.10",
+    "request": "^2.88.2"
+  }
+}

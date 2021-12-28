@@ -1,0 +1,31 @@
+<service>
+	<id>securosalarmnetintegrationmodule10x.exe</id>
+	<name>SecurOS - Alarmnet Integration Module 10.x</name>
+	<description>SecurOS Plugin to Integrate Alarmnet Module</description>
+	<executable>C:\Users\Santiago\Documents\Github\Sodimac - Corona\integretionServer\Intrusion\Alarmnet\node.exe</executable>
+	<argument>--harmony</argument>
+	<argument>C:\Users\Santiago\Documents\Github\Sodimac - Corona\integretionServer\Intrusion\Alarmnet\node_modules\node-windows\lib\wrapper.js</argument>
+	<argument>--file</argument>
+	<argument>C:\Users\Santiago\Documents\Github\Sodimac - Corona\integretionServer\Intrusion\Alarmnet\index.js</argument>
+	<argument>--scriptoptions=</argument>
+	<argument>--log</argument>
+	<argument>SecurOS - Alarmnet Integration Module 10.x wrapper</argument>
+	<argument>--grow</argument>
+	<argument>0.25</argument>
+	<argument>--wait</argument>
+	<argument>1</argument>
+	<argument>--maxrestarts</argument>
+	<argument>3</argument>
+	<argument>--abortonerror</argument>
+	<argument>n</argument>
+	<argument>--stopparentfirst</argument>
+	<argument>undefined</argument>
+	<logmode>rotate</logmode>
+	<stoptimeout>30sec</stoptimeout>
+	<serviceaccount>
+		<domain>SANTIAGO-PC</domain>
+		<user>LocalSystem</user>
+		<password></password>
+	</serviceaccount>
+	<workingdirectory>C:\Users\Santiago\Documents\Github\Sodimac - Corona\integretionServer\Intrusion\Alarmnet</workingdirectory>
+</service>

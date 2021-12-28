@@ -1,0 +1,20 @@
+{
+    "ip_securos":"192.168.0.100",
+    "puerto_securos":"3000",
+    "ip_integration_server":"192.168.0.100",
+    "puerto_integration_server":"1234",
+    "alarmnet":
+    {
+        "puerto":"2000"
+    },
+    "system5":
+    {
+        "ip":"192.168.1.109",
+        "puerto":"1027"
+    },
+    "bosch":
+    {
+        "ip":"192.168.0.75",
+        "puerto":"7700"
+    }    
+}

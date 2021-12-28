@@ -1,0 +1,36 @@
+:root{
+	--primary:#111b54;
+	--light:#fff;
+	--grey: #efefef;
+    --securosbar : linear-gradient(180deg, #3E4B6F, #293450);;
+    --securosbg:  #1F2840;
+    --securoshd:  #333C5C;
+	--green:  #4cf22a;
+	--red: linear-gradient(180deg, #3E4B6F, #293450);;
+}
+
+.service-card{
+    padding: 10px;
+    background-color: #293b65;
+    color:#eee9e9;
+    max-width: 250px;
+    min-width: 250px;
+}
+
+.service-card:hover{
+    transform: scale(0.97)  ;
+    cursor: default;
+}
+
+.tittle-name{
+    text-transform: uppercase;
+}
+
+.wrapper{
+    overflow-x: hidden;
+}
+
+.wrapper-boxes{
+    box-sizing: border-box;
+    width: max-content;
+}

@@ -1,0 +1,23 @@
+<div class="col-md-4 mx-auto">
+    <div class="card-block login-form">
+        <div class="card-header display-6 text-light">
+            <h3 class="text-light">Configuración <small class="tittle-name">{{service.name}}</small></h3>
+        </div>
+        <div class="card-body">
+            <form action="/advance-config/edit/service/{{service._id}}?_method=PUT" method="POST">
+                <input type="hidden" name="_method" value="PUT">
+                <label class="text-light" for="ip">IP</label>
+                <div class="mb-3"> 
+                    <input type="text" id="ip" class="form-control disable" name="ip" placeholder="ip" value={{service.ip}}>
+                </div>
+                <label class="text-light" for="port">Puerto</label>
+                <div class="mb-3"> 
+                    <input type="text" id="port" class="form-control" name="port" placeholder="port" value={{service.port}}>
+                 </div>
+                <div class="d-grid gap-2">
+                 <button class="btn btn-primary" type="submit">Guardar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

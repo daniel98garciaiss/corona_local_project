@@ -1,0 +1,19 @@
+{
+  "name": "alarmnet",
+  "version": "1.0.0",
+  "description": "Alarmnet integration module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "alarmnet"
+  ],
+  "author": "SR",
+  "license": "ISC",
+  "dependencies": {
+    "csvtojson": "^2.0.10",
+    "node-windows": "^1.0.0-beta.6",
+    "request": "^2.88.2"
+  }
+}

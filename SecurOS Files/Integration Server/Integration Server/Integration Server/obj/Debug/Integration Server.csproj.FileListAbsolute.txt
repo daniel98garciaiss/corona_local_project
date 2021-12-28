@@ -1,0 +1,31 @@
+C:\Users\Alejandra Aguirre\source\repos\Integration Server\Integration Server\bin\Debug\Integration Server.exe.config
+C:\Users\Alejandra Aguirre\source\repos\Integration Server\Integration Server\bin\Debug\Integration Server.exe
+C:\Users\Alejandra Aguirre\source\repos\Integration Server\Integration Server\bin\Debug\Integration Server.pdb
+C:\Users\Alejandra Aguirre\source\repos\Integration Server\Integration Server\bin\Debug\LogsCol.dll
+C:\Users\Alejandra Aguirre\source\repos\Integration Server\Integration Server\obj\Debug\Integration Server.csprojAssemblyReference.cache
+C:\Users\Alejandra Aguirre\source\repos\Integration Server\Integration Server\obj\Debug\Integration_Server.ProjectInstaller.resources
+C:\Users\Alejandra Aguirre\source\repos\Integration Server\Integration Server\obj\Debug\Integration Server.csproj.GenerateResource.cache
+C:\Users\Alejandra Aguirre\source\repos\Integration Server\Integration Server\obj\Debug\Integration Server.csproj.CoreCompileInputs.cache
+C:\Users\Alejandra Aguirre\source\repos\Integration Server\Integration Server\obj\Debug\Integration Server.csproj.CopyComplete
+C:\Users\Alejandra Aguirre\source\repos\Integration Server\Integration Server\obj\Debug\Integration Server.exe
+C:\Users\Alejandra Aguirre\source\repos\Integration Server\Integration Server\obj\Debug\Integration Server.pdb
+C:\Users\Alejandra Aguirre\Dropbox\Integraciones\NodeJS\IntegrationServer\SecurOS Files\Integration Server\Integration Server\bin\Debug\Integration Server.exe.config
+C:\Users\Alejandra Aguirre\Dropbox\Integraciones\NodeJS\IntegrationServer\SecurOS Files\Integration Server\Integration Server\bin\Debug\Integration Server.exe
+C:\Users\Alejandra Aguirre\Dropbox\Integraciones\NodeJS\IntegrationServer\SecurOS Files\Integration Server\Integration Server\bin\Debug\Integration Server.pdb
+C:\Users\Alejandra Aguirre\Dropbox\Integraciones\NodeJS\IntegrationServer\SecurOS Files\Integration Server\Integration Server\obj\Debug\Integration Server.csprojAssemblyReference.cache
+C:\Users\Alejandra Aguirre\Dropbox\Integraciones\NodeJS\IntegrationServer\SecurOS Files\Integration Server\Integration Server\obj\Debug\Integration_Server.ProjectInstaller.resources
+C:\Users\Alejandra Aguirre\Dropbox\Integraciones\NodeJS\IntegrationServer\SecurOS Files\Integration Server\Integration Server\obj\Debug\Integration Server.csproj.GenerateResource.cache
+C:\Users\Alejandra Aguirre\Dropbox\Integraciones\NodeJS\IntegrationServer\SecurOS Files\Integration Server\Integration Server\obj\Debug\Integration Server.csproj.CoreCompileInputs.cache
+C:\Users\Alejandra Aguirre\Dropbox\Integraciones\NodeJS\IntegrationServer\SecurOS Files\Integration Server\Integration Server\obj\Debug\Integration Server.csproj.CopyComplete
+C:\Users\Alejandra Aguirre\Dropbox\Integraciones\NodeJS\IntegrationServer\SecurOS Files\Integration Server\Integration Server\obj\Debug\Integration Server.exe
+C:\Users\Alejandra Aguirre\Dropbox\Integraciones\NodeJS\IntegrationServer\SecurOS Files\Integration Server\Integration Server\obj\Debug\Integration Server.pdb
+C:\Users\Alejandra Aguirre\Documents\IntegrationServer\Integration Server Final\Integration Server\Integration Server\bin\Debug\Integration Server.exe.config
+C:\Users\Alejandra Aguirre\Documents\IntegrationServer\Integration Server Final\Integration Server\Integration Server\bin\Debug\Integration Server.exe
+C:\Users\Alejandra Aguirre\Documents\IntegrationServer\Integration Server Final\Integration Server\Integration Server\bin\Debug\Integration Server.pdb
+C:\Users\Alejandra Aguirre\Documents\IntegrationServer\Integration Server Final\Integration Server\Integration Server\obj\Debug\Integration Server.csprojAssemblyReference.cache
+C:\Users\Alejandra Aguirre\Documents\IntegrationServer\Integration Server Final\Integration Server\Integration Server\obj\Debug\Integration_Server.ProjectInstaller.resources
+C:\Users\Alejandra Aguirre\Documents\IntegrationServer\Integration Server Final\Integration Server\Integration Server\obj\Debug\Integration Server.csproj.GenerateResource.cache
+C:\Users\Alejandra Aguirre\Documents\IntegrationServer\Integration Server Final\Integration Server\Integration Server\obj\Debug\Integration Server.csproj.CoreCompileInputs.cache
+C:\Users\Alejandra Aguirre\Documents\IntegrationServer\Integration Server Final\Integration Server\Integration Server\obj\Debug\Integration Server.csproj.CopyComplete
+C:\Users\Alejandra Aguirre\Documents\IntegrationServer\Integration Server Final\Integration Server\Integration Server\obj\Debug\Integration Server.exe
+C:\Users\Alejandra Aguirre\Documents\IntegrationServer\Integration Server Final\Integration Server\Integration Server\obj\Debug\Integration Server.pdb

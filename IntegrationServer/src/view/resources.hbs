@@ -1,0 +1,56 @@
+<div class="mb-1 bg-light rounded-3 bg-securosbar text-light">
+      <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold d-flex justify-content-between align-items-center">Recursos 
+            {{#ifCond user.rol "==" "admin"}}
+            <a alt="Crear" class="link-light" href="/resources/create"><i class="fa fa-plus-circle mx-5 green" aria-hidden="true"></i></a>
+            {{/ifCond}}
+         </h1>
+      </div>
+    </div>
+
+<div class="row  mb-4  rounded-3 " id="resources_container">
+    {{#each Opc}}
+        <div class="col-md-6 mt-2">
+            <div class="card shadow rounded">
+                <div class="card-body">
+                    <h4 class="card-title d-flex justify-content-between align-items-center">
+                        <i class="fa fa-cogs" aria-hidden="true"></i> 
+                        <a alt="Edit" class="link-light" href="/resources/opc/{{_id}}/monitor">OPC - {{name}} </a> 
+                        <a alt="Edit" class="link-light" href="/resources/opc/{{_id}}"><i class="fas fa-edit"></i></a>
+                    </h4>
+                    <p>{{url}} </p>
+                     <p> {{state}} </p>
+                    <h4 class="card-title d-flex justify-content-between align-items-center">
+                    {{#ifCond ../user.rol "==" "admin"}}
+
+                    <form action="/resources/opc/{{_id}}?_method=DELETE" method="POST">
+                        <input type="hidden" name="_method" value="DELETE">
+                        <button class="btn btn-danger btn-sm" type="submit"><i class="fas fa-trash-alt"></i> 
+                    </form> 
+                    {{/ifCond}}
+
+                    </button> <i class="fas fa-circle  {{state}} "></i>
+                    </h4>
+                </div>
+            </div>
+        </div>
+    {{/each}}
+    {{!-- {{#each Restapi}}
+        <div class="col-md-6 mt-2">
+            <div class="card shadow rounded">
+                <div class="card-body">
+                    <h4 class="card-title d-flex justify-content-between align-items-center">
+                        RESTAPI - {{name}} <a alt="Edit" class="link-light" href="/users/edit/{{_id}}"><i class="fas fa-edit"></i></a>
+                    </h4>
+                    <p>URL: {{url}} </p>
+                     <p> ESTADO: {{state}} </p>
+                    <form action="/users/delete/{{_id}}?_method=DELETE" method="POST">
+                        <input type="hidden" name="_method" value="DELETE">
+                        <button class="btn btn-danger btn-sm" type="submit"><i class="fas fa-trash-alt"></i></button> 
+                    </form>
+                </div>
+            </div>
+        </div>
+    {{/each}} --}}
+   
+</div>

@@ -1,0 +1,46 @@
+ {{#if opc}}
+ <div class="mb-1 bg-light rounded-3 bg-securosbar text-light">
+      <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold d-flex justify-content-between align-items-center">OPC: {{opc.name}}   
+         </h1>
+           <small>{{opc._id}}</small>
+   
+          <form action="/resources/opc/test" method="POST" >
+            <div class="d-grid gap-2">
+                <button class="btn btn-primary" type="submit">TEST</button>
+            </div>
+             </form>
+      </div>
+</div>
+
+<div class="col-md-12 mx-auto">
+  <table class="table table-dark bg-table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Valor</th>
+    </tr>
+  </thead>
+  <tbody id="resource_variables">
+      
+    {{#each opc.methods}}
+      {{this.length}}
+      {{#each this}}
+      <tr>
+        <th scope="row">{{@index}}</th>
+        <td> {{@key}}</td>
+        <td>{{this}}</td>
+      </tr>
+      {{/each}}
+    {{/each}}
+  </tbody>
+</table>
+</div>
+{{/if}}
+<script>
+  
+  let Opc = `{{opc._id}}`
+  monitorOpc(Opc);
+
+</script>

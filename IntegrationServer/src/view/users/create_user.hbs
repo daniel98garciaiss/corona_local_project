@@ -1,0 +1,37 @@
+
+
+
+ <div class="col-md-4 mx-auto mt-4">
+    <div class="card-block login-form">
+        <div class="card-header display-6 text-light">
+            Crear nuevo Usuario
+        </div>
+        <div class="card-body ">
+             <form action="/users/new/" method="POST" >
+             <div class="mb-3"> 
+                <input type="text" id="login" class="form-control" name="login" placeholder="Usuario" value="{{login}}">
+             </div>
+             <div class="mb-3"> 
+                <input type="password" id="password" name="password" class="form-control" aria-describedby="passwordHelpBlock" placeholder="Contraseña" value="{{password}}">
+             </div>
+             <div class="mb-3"> 
+                <input type="text" id="firstname" class="form-control" name="firstname" placeholder="Nombre" value="{{firstname}}">
+             </div>
+             <div class="mb-3"> 
+                <input type="text" id="lastname" class="form-control" name="lastname" placeholder="Apellido" value="{{lastname}}">
+             </div>
+             <div class="mb-3"> 
+               <select class="form-select" name="rol" aria-label="Default select example">
+                  <option selected>Tipo de usuario</option>
+                  <option value="admin">Administrador</option>
+                  <option value="common">Usuario comun</option>
+               </select>
+             </div>
+
+             <div class="d-grid gap-2">
+                <button class="btn btn-primary" type="submit">Crear</button>
+            </div>
+             </form>
+        </div>
+    </div>
+</div>
